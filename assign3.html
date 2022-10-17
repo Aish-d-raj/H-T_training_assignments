@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  
+}
+
+
+.header {
+  background-color: darkgray;
+  border-radius: 25px;
+  margin-left:100px;
+  margin-right: 100px;
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+}
+
+.column {
+  float: left;
+  background-color: darkgray;
+  border-radius: 25px;
+  height: 300px;
+  margin-left:100px;
+  padding: 10px;
+  padding:5px 6px 7px 8px;
+  
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.foot {
+ background-color: darkgray;
+  border-radius: 25px;
+  margin-left:100px;
+  margin-right: 100px;
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+}
+
+
+#nav {
+  width: 200px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+#section {
+  width: 500px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+#side {
+  width: 200px;
+  margin-top: 10px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+  <h1>Header</h1>
+</div>
+ <div class="row">
+    <div class="column" id="nav">
+      <h2>Nav</h2>
+     
+    </div>
+    
+    <div class="column" id="section">
+      <h2>Section</h2>
+      
+    </div>
+    
+    <div class="column" id="side">
+      <h2>side nav</h2>
+      
+    </div>
+</div>
+<div class="footer">
+    <h1 class="foot">Footer</h1>
+  </div>
+  
+
+</body>
+</html>
+
+
